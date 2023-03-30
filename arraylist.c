@@ -58,7 +58,7 @@ void push(ArrayList * l, void * data, int i){
 }
 
 void* pop(ArrayList * l, int i){
-    if (i > l->size) return;
+    if (i > l->size) return NULL;
 
     void *aux = (i < 0) ? l->data[l->size + i] : l->data[i];
 
@@ -67,7 +67,7 @@ void* pop(ArrayList * l, int i){
         l->data[k] = l->data[k + 1];
     }
     l->size--;
-    
+
     return aux;
 }
 

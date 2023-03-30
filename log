@@ -69,3 +69,9 @@ arraylist.c:60:7: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 11fcf55
+jue 30 mar 2023 16:28:14 -03: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|2
+total_score: 40/70
+f016794
