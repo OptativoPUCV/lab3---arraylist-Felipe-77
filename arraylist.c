@@ -60,10 +60,11 @@ void push(ArrayList * l, void * data, int i){
 void* pop(ArrayList * l, int i){
     if (i > l->size) return NULL;
 
-    void *aux = (i < 0) ? l->data[l->size + i] : l->data[i];
+    int indice = (i < 0) ? l->size + i : i;
+    void *aux = l->data[indice];
 
     int k;
-    for (k = i; k < l->size; k++){
+    for (k = indice; k < l->size; k++){
         l->data[k] = l->data[k + 1];
     }
     l->size--;
