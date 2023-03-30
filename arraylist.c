@@ -65,7 +65,7 @@ void* get(ArrayList * l, int i){
     void *aux;
     int indice;
     if (i < 0) indice = l->size + i;
-    else indice = l->size - i;
+    else indice = i;
     
     aux = l->data[indice];
     return aux;
