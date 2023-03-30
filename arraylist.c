@@ -54,22 +54,22 @@ void push(ArrayList * l, void * data, int i){
 
     l->data[i] = data;
 
-    l->size++;
+    l->size++;                                 //Guardamos el dato y actualizamos size
 }
 
 void* pop(ArrayList * l, int i){
-    if (i > l->size || l->size == 0) return NULL;
+    if (i > l->size || l->size == 0) return NULL;       //Verificamos si i es válida y si la lista esta vacia, de ser asi finalizamos la funcion
 
-    int indice = (i < 0) ? l->size + i : i;
+    int indice = (i < 0) ? l->size + i : i;             //Calculamos el indice segun el signo de i
     void *aux = l->data[indice];
 
     int k;
-    for (k = indice; k < l->size; k++){
+    for (k = indice; k < l->size; k++){                 //Bucle que mueve los elementos una casilla a la izquierda
         l->data[k] = l->data[k + 1];
     }
     l->size--;
 
-    return aux;
+    return aux;                                         //Actualizamos size y retornamos el dato
 }
 
 void* get(ArrayList * l, int i){
@@ -84,7 +84,7 @@ int get_size(ArrayList * l){
 
 //remove elements
 void clean(ArrayList * l){
-    l->data = (void *) realloc(l->data, sizeof(void *) * 2);
+    l->data = (void *) realloc(l->data, sizeof(void *) * 2);   
     if(!l->data) exit(EXIT_FAILURE);
 
     l->capacity = 2;
