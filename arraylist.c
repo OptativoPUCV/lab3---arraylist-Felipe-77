@@ -60,7 +60,7 @@ void* pop(ArrayList * l, int i){
 }
 
 void* get(ArrayList * l, int i){
-    if (i == l->size) return NULL;
+    if (i > l->size) return NULL;
 
     void *aux;
     int indice;

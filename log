@@ -37,3 +37,9 @@ jue 30 mar 2023 16:02:50 -03:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 6e73ae1
+jue 30 mar 2023 16:04:12 -03: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|2
+total_score: 40/70
+fbc90d8
