@@ -8,3 +8,9 @@ jue 30 mar 2023 15:19:25 -03:
  tests:  1|5
 total_score: 10/70
 51aa6d9
+jue 30 mar 2023 15:30:25 -03: 
+ arraylist.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ tests:  1|5
+total_score: 10/70
+85d6884
