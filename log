@@ -20,3 +20,9 @@ jue 30 mar 2023 15:31:09 -03:
  tests:  3|4
 total_score: 20/70
 6b91b54
+jue 30 mar 2023 15:42:25 -03: 
+ arraylist.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ tests:  5|3
+total_score: 30/70
+e8f35cf

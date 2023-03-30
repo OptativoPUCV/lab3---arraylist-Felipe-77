@@ -38,7 +38,21 @@ void append(ArrayList * l, void * data){
 }
 
 void push(ArrayList * l, void * data, int i){
+    if (i > l->size) return;
 
+    if (l->size == l->capacity){
+        l->capacity *= 2;
+
+        l->data = (void *) realloc(l->data, sizeof(void*) * l->capacity);
+        if (!l->data) exit(EXIT_FAILURE);
+    }
+
+    int k;
+    for (k = l->size - 1; k >= i; k--) l->data[k + 1] = l->data[k];
+
+    l->data[i] = data;
+
+    l->size++;
 }
 
 void* pop(ArrayList * l, int i){
